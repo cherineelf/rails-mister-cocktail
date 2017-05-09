@@ -1,0 +1,10 @@
+<div class="col-xs-12 col-sm-4">
+  <div class="card" style="background-image: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.2)), url('http://lorempixel.com/400/200/city/');">
+    <div class="card-category">
+      <%= link_to "edit", edit_cocktail_path(cocktail), class:"btn btn-default btn-xs" %>
+    </div>
+    <div class="card-description">
+      <h2><%= link_to cocktail.name, cocktail_path(cocktail) %></h2>
+    </div>
+  </div>
+</div>

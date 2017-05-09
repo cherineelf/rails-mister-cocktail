@@ -1,0 +1,13 @@
+<p id="notice"><%= notice %></p>
+
+<h1 class="text-center">Cocktails Party</h1>
+
+  <div class="row">
+    <% @cocktails.each do |cocktail| %>
+      <%= render "card", cocktail: cocktail %>
+    <% end %>
+  </div>
+
+<br>
+
+<%= link_to 'New Cocktail', new_cocktail_path, class: "btn btn-outline-secondary btn-lg" %>
